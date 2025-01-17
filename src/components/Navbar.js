@@ -18,10 +18,10 @@ const Navbar = () => (
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link className="nav-link" to="/users">Usuarios</Link>
+            <Link className="nav-link" to="/users">Somos</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/products">Productos</Link>
+            <Link className="nav-link" to="/products">Personajes Pokemon</Link>
           </li>
         </ul>
         <ul className="navbar-nav ms-auto">
@@ -33,6 +33,8 @@ const Navbar = () => (
     </div>
   </nav>
   </div>
+  
+  
 
 );
 
