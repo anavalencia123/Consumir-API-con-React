@@ -54,8 +54,8 @@ const Pokemon = () => {
         <img
           src={pokemon.sprites.front_default}
           alt={pokemon.name}
-          width="200"
-          height="200"
+          width="300"
+          height="300"
           className="mb-3"
         />
         <h2>Detalles:</h2>
@@ -70,6 +70,16 @@ const Pokemon = () => {
               {pokemon.abilities.map((ability) => (
                 <li key={ability.ability.name}>{ability.ability.name}</li>
               ))}
+            </ul>
+          </li>
+          <li className="list-group-item">
+          <strong>Stats:</strong>
+            <ul className="list-unstyled ms-3">
+              {pokemon.stats.map((stat) => (
+                <li key={stat.stat.name}>
+                <strong>{stat.stat.name}:</strong> {stat.base_stat}
+                </li>
+                ))}
             </ul>
           </li>
         </ul>
